@@ -1,0 +1,174 @@
+html, body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: rgba(0,0,0,0.87);
+}
+
+.container {
+    width: 85%;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+h4 {
+    font-weight: 300;
+    font-size: 25px;
+}
+
+hr {
+    border-top: 1px solid #f16174;
+}
+
+.content {
+    margin-top: 5%;
+}
+
+.card {
+    border-radius: 7px;
+}
+
+nav {
+    background: #f16174;
+    box-shadow: 0 1px 0 0 rgba(0,0,0,0.16),0 2px 0 0 rgba(0,0,0,0.12);
+}
+
+.card-gradient {
+    width: 330px;
+    height: 100%;
+    background: #FF512F; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left top, #FF512F , #DD2476); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left top, #FF512F , #DD2476); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    opacity: .8;
+}
+
+.fade.ng-enter {
+  transition:0.5s linear all;
+  opacity:0;
+}
+
+.fade.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+.section-title {
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #f16174;
+}
+
+.forecast-main {
+    color: #fff;
+    padding: 48px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.forecast-main .temp {
+    font-size: 108px;
+    font-weight: 100;
+    height: 140px;
+}
+
+.forecast-main .city {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.forecast-main .weather-desc {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.date {
+    padding: 48px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.forecasts {
+    margin-top: 26px;
+}
+
+.hourly-forecast {
+    margin-top: 32px;
+}
+
+.temp-body {
+    color: #f16275;
+    margin-left: 22px;
+    font-size: 24px;
+}
+
+.tabs .tab{
+    text-align: left;
+}
+
+.tabs .indicator {
+    height: 1px;
+}
+
+.wi {
+    color: #f16275;
+}
+
+.collection .collection-item.avatar i.circle {
+    background-color: #f16275;
+}
+
+.mobile-only {
+    display: none;
+}
+
+@media screen and (max-width: 1440px) {
+    .card-gradient {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-image {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+        width: 100%;
+        background: #FF512F; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left top, #FF512F , #DD2476); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left top, #FF512F , #DD2476); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        opacity: .8;
+        text-align: center;
+    }
+
+    .mobile-only .forecast-main {
+        color: #fff;
+        padding: 12px;
+        position: relative;
+    }
+
+    .mobile-only .forecast-main .temp {
+        font-size: 32px;
+        margin: 0;
+        font-weight: 100;
+        height: 100%;
+    }
+
+    .mobile-only .date {
+        padding: 16px;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .forecasts {
+        text-align: center;
+    }
+}
